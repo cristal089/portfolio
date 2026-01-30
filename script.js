@@ -58,14 +58,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     link.style.color = '';
                     link.style.borderBottom = '';
                     if (link.getAttribute('href') === `#${sectionId}`) {
-                        link.style.color = 'var(--mario-blue)';
-                        link.style.borderBottom = '2px solid var(--mario-blue)';
+                        link.style.color = 'var(--mario-red)';
+                        link.style.borderBottom = '2px solid var(--mario-red)';
                     }
                 });
             }
         });
     }
-
     window.addEventListener('scroll', highlightActiveSection);
     highlightActiveSection(); // Chama uma vez no carregamento
 });
